@@ -119,4 +119,4 @@ Licencia
 Este proyecto está bajo la licencia MIT.
 
 Autor
-[Oscar Garateguy-OLGP] - [https://github.com/OLGP/task-manager-app/blob/main/readme.txtce]
+[Oscar Garateguy-OLGP] - [https://github.com/OLGP/task-manager-app]
