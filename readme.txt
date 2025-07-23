@@ -8,7 +8,7 @@ task-manager-app/
     ├── package.json       (Archivo de configuración de Node.js)
     └── .env               (Para variables de entorno como la URL de MongoDB)
 
- # Gestor de Tareas Full-Stack (MERN Stack)
+    # Gestor de Tareas Full-Stack (MERN Stack)
 
 Este es un gestor de tareas web completo, desarrollado con el **MERN Stack** (MongoDB, Express.js, React/Frontend JavaScript, Node.js). Permite a los usuarios añadir, ver, marcar como completadas, editar y eliminar tareas de forma intuitiva, con funcionalidades de filtrado y búsqueda en tiempo real.
 
@@ -57,8 +57,66 @@ Sigue estos pasos para levantar la aplicación en tu máquina local.
 * Una cuenta en [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) (para la base de datos)
 * [Git](https://git-scm.com/downloads) (opcional, para clonar el repositorio)
 
+
+
 ### **1. Clonar el Repositorio**
 
 ```bash
 git clone [https://github.com/OLGP/task-manager-app.git](https://github.com/TU_USUARIO_GITHUB/task-manager-app.git)
-cd task-manager-app   
+cd task-manager-app
+
+
+2. Configuración del Backend
+Navega a la carpeta backend:
+
+Bash
+
+cd backend
+Instala las dependencias:
+
+Bash
+
+npm install
+Crea un archivo .env en la carpeta backend con tu cadena de conexión de MongoDB Atlas:
+
+MONGODB_URI="tu_cadena_de_conexion_de_mongodb_atlas"
+PORT=3000
+Asegúrate de reemplazar "tu_cadena_de_conexion_de_mongodb_atlas" con la URI de conexión real de tu clúster de MongoDB Atlas.
+
+Inicia el servidor backend:
+
+Bash
+
+node server.js
+# O, si tienes nodemon instalado para desarrollo:
+# nodemon server.js
+El servidor se ejecutará en http://localhost:3000.
+
+3. Configuración del Frontend
+Navega de vuelta a la carpeta raíz del proyecto y luego a frontend:
+
+Bash
+
+cd ../frontend
+Como el frontend es puramente HTML, CSS y JavaScript, no necesita instalación de dependencias npm. Simplemente abre el archivo index.html en tu navegador web.
+
+# Abre el archivo en tu navegador (ejemplo para Windows)
+start index.html
+Uso de la Aplicación
+Añadir Tarea: Escribe en el campo de texto y presiona Enter o el botón "Añadir Tarea".
+
+Completar/Descompletar: Haz clic en la casilla de verificación al lado de cada tarea.
+
+Editar Tarea: Haz clic en el botón "Editar". El texto se convertirá en un campo de entrada. Edita y presiona Enter o haz clic fuera del campo.
+
+Eliminar Tarea: Haz clic en el botón "Eliminar".
+
+Filtrar Tareas: Usa los botones "Todas", "Pendientes" y "Completadas".
+
+Buscar Tareas: Escribe en el campo "Buscar tareas..." para filtrar la lista en tiempo real.
+
+Licencia
+Este proyecto está bajo la licencia MIT.
+
+Autor
+[Oscar Garateguy-OLGP] - [https://github.com/OLGP/task-manager-app/blob/main/readme.txtce]
